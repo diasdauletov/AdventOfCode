@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    ifstream inputStream("1_2input.txt");
+    ifstream inputStream("input/01_2.txt");
 
     vector<int> nums;
     map<int, int> count;
@@ -18,7 +18,7 @@ int main() {
         res += count[num] * num;
     }
 
-    ofstream output("1_2output.txt");
+    ofstream output("output/01_2.txt");
     cout.rdbuf(output.rdbuf());
     cout << res;
 }

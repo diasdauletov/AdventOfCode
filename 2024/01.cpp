@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    ifstream inputStream("1_input.txt");
+    ifstream inputStream("input/01.txt");
 
     // read input and save the first and the second list
     vector<int> first, second;
@@ -20,7 +20,7 @@ int main() {
     }
 
     // result
-    ofstream output("1_output.txt");
+    ofstream output("output/01.txt");
     cout.rdbuf(output.rdbuf());
     cout << sum;
 }

@@ -25,7 +25,7 @@ bool safe(const vector<int> & levels) {
 }
 
 int main() {
-    ifstream inputStream("2_2input.txt");
+    ifstream inputStream("input/02_2.txt");
     
     // read the list of numbers in each line and determine if it is safe, and count the number of safe levels
     string inputLine;
@@ -51,7 +51,7 @@ int main() {
     }
 
     // result
-    ofstream output("2_2output.txt");
+    ofstream output("output/02_2.txt");
     cout.rdbuf(output.rdbuf());
     cout << res;
 }
