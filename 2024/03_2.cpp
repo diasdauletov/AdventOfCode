@@ -15,7 +15,7 @@ int solve(string str) {
         if (str.substr(i, 3) != "mul") continue;
         
         // check that after "mul" there is "("
-        if (i + 4 >= str.size() || str[i + 3] != '(') continue;
+        if (i + 3 >= str.size() || str[i + 3] != '(') continue;
         
         // parse the first number in "mul(first,second)"
         i += 4;
