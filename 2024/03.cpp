@@ -4,7 +4,7 @@ using namespace std;
 int solve(string str) {
     int res = 0;
 
-    for (int i = 0; i + 3 < str.size(); i++) {
+    for (int i = 0; i + 2 < str.size(); i++) {
         // check that str[i..<i+3] = "mul"
         if (str.substr(i, 3) != "mul") continue;
         
