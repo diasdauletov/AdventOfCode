@@ -13,7 +13,7 @@ int searchWordInGrid(string word, vector<string> & grid) {
     int matchCount = 0;
     for (int i = 0; i < grid.size(); i++) {
         for (int j = 0; j < grid[i].size(); j++) {
-            // search in 8 directions from the center: + and x
+            // search in 8 directions from the (i, j): + and x
             vector<pair<int, int>> dirs = {
                 {0, 1}, {0, -1}, {1, 0}, {-1, 0}, // right, left, down, up
                 {1, 1}, {1, -1}, {-1, 1}, {-1, -1} // diagonal directions
